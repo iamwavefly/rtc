@@ -89,8 +89,8 @@ async function leave() {
   document.getElementById('local-scream-id').innerHTML = '';
   console.log('client leaves channel success');
 
-  newStreamBtn.removeAttribute('disabled', false);
-  joinStreamBtn.removeAttribute('disabled', false);
+  newStreamBtn.removeAttribute('disabled');
+  joinStreamBtn.removeAttribute('disabled');
   leaveSreamBtn.setAttribute('disabled', true);
 }
 
