@@ -64,6 +64,10 @@ async function join() {
     await client.publish(Object.values(localTracks));
     console.log('publish success');
   }
+
+  newStreamBtn.setAttribute('disabled', true);
+  joinStreamBtn.setAttribute('disabled', true);
+  leaveSreamBtn.removeAttribute('disabled');
 }
 
 async function leave() {
@@ -83,10 +87,11 @@ async function leave() {
   // leave the channel
   await client.leave();
   document.getElementById('local-scream-id').innerHTML = '';
-  // $('#host-join').attr('disabled', false);
-  // $('#audience-join').attr('disabled', false);
-  // $('#leave').attr('disabled', true);
   console.log('client leaves channel success');
+
+  newStreamBtn.removeAttribute('disabled', false);
+  joinStreamBtn.removeAttribute('disabled', false);
+  leaveSreamBtn.setAttribute('disabled', true);
 }
 
 async function subscribe(user, mediaType) {

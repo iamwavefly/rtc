@@ -15,12 +15,22 @@ h1,h4{
 }
 #remote-container{
   display: flex;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #eeee;
 }
-#remote-container video{
+#remote-container div{
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #eeee;
+}
+.agora_video_player{
   height: auto;
   position: relative !important;
   position: relative;
-  width: 50%;
+  width: 20rem !important;
+  height: 20rem !important;
   margin: 0 auto;
   display: block;
 }
