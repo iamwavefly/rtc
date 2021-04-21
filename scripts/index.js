@@ -8,10 +8,10 @@ var remoteUsers = {};
 // Agora client options
 var options = {
   appid: '306d86f1ec2644c3affab320daef132c',
-  channel: 'live',
+  channel: 'rush',
   uid: null,
   token:
-    '006306d86f1ec2644c3affab320daef132cIACy4QTOQ7YuSW/owv1KAETJNeKgDYYd3BdnD8pnQ+iBG68sD1MAAAAAEACU3jyLM7N9YAEAAQAys31g',
+    '006306d86f1ec2644c3affab320daef132cIADBDMhAO8Cr6UnJk+mdJWPzCyRuX4rLTMIZQH7x0Uzfue/eM/UAAAAAEACAP6zYzOGBYAEAAQDL4YFg',
   role: 'audience', // host or audience
 };
 let newStreamBtn = document.getElementById('new');
